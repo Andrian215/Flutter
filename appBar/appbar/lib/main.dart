@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter додаток з appBar та bottomNavigationBar',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Заголовок'),
+          title: Text('Containers'),
         ),
         body: Stack(
           children: [
