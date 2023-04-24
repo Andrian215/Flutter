@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
               color: Colors.grey,
               child: Center(
                 child: Text(
-                  'Центральний текст',
+                  'Деякий текст...',
                   style: TextStyle(
                     fontSize: 24.0,
                     color: Colors.white,
                     decoration: TextDecoration.none,
-                    background: Paint()..color = Colors.blue,
+                    background: Paint()..color = Colors.yellow,
                   ),
                 ),
               ),
@@ -76,12 +76,9 @@ class MyApp extends StatelessWidget {
             ),
           ],
           selectedItemColor: Colors.amber[800],
-          onTap: (int index) {
-          },
+          onTap: (int index) {},
         ),
       ),
     );
   }
 }
-
-
