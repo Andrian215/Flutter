@@ -173,7 +173,10 @@ class TaskListTab extends StatelessWidget {
       itemBuilder: (context, index) {
         final task = tasks[index];
         return ListTile(
-          title: Text(task),
+          title: Text(
+            task,
+            style: TextStyle(fontSize: 20),
+          ),
           trailing: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -191,8 +194,7 @@ class TaskListTab extends StatelessWidget {
                     builder: (BuildContext context) {
                       return AlertDialog(
                         title: Text('Delete Task'),
-                        content:
-                            Text('Are you sure you want to delete this case?'),
+                        content: Text('Are you sure you want to delete this?'),
                         actions: [
                           TextButton(
                             onPressed: () {
@@ -237,7 +239,10 @@ class CompletedTasksTab extends StatelessWidget {
       itemBuilder: (context, index) {
         final task = completedTasks[index];
         return ListTile(
-          title: Text(task),
+          title: Text(
+            task,
+            style: TextStyle(fontSize: 20),
+          ),
           trailing: IconButton(
             icon: Icon(Icons.delete),
             onPressed: () {
